@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $(".loader").fadeIn("slow");
     loadEmployees();
     loadAppointments();
     btnLoadEmployees();

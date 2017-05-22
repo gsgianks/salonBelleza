@@ -22,7 +22,7 @@ $(document).ready(function(){
 		    data:datos,
 		    success: function(responseText){
       			var data = JSON.parse(responseText);
-            if(data[0].idUsuario == 0){
+            if(data[0].id == 0){
               $("#msgLog").text("*Usuario no registrado");
               $("#msgLog").fadeIn("slow");
             }else{
@@ -38,7 +38,7 @@ $(document).ready(function(){
         location.href="GUI/Admin/AdminHomePage.php";
         break;
       case 0:
-        location.href="GUI/Employee/EmployeeHomePage";
+        location.href="GUI/Employee/EmployeeHomePage.php";
         break;
     } 
   }
