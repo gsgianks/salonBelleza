@@ -16,7 +16,6 @@
         echo "<li class='card employee' data-id='".$employee->id."'>";
         echo "<div>";
         echo "<div class='contenido_card'>";
-        echo "<h4><a href='#' data-idEvaluacion='".$employee->id."' data-nomEvaluacion='".$employee->email."' data-tiempo='".$employee->password."' </a></h4>";
         echo "<label class='email'>Email:".$employee->email."</label><br>";
         echo "<label class='password'>Password:".$employee->password."</label>";
         echo "</div>";
