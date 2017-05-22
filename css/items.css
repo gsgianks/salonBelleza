@@ -1,0 +1,11 @@
+.opt-selec-unica {
+	width: 40%;
+	margin: auto;
+	background: lightgray;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 10px;
+}
+.opt-selec-unica>label{font-size: 20px;color: blue;}
+
+.opt-selec-unica-modal {margin-top: 100px; float: left;}

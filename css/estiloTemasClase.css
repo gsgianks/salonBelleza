@@ -1,0 +1,64 @@
+.contenedorTemas {
+	width: 60%;
+	margin: auto;
+	background: lightgray;
+	margin-bottom: 20px;
+    font-size: 20px;
+	color: black;
+	padding: 10px;
+}
+
+.contenedorTemas:hover, .contenedorTemas:focus {
+  background: #009688;
+  color: #fff;
+  outline: 0;
+  font-size: 25px;
+  color: white;
+}
+
+.nombreClase {
+	width: 100%;
+	margin: auto;
+	background: #009688;
+	margin-bottom: 20px;
+    font-size: 20px;
+	color: white;
+	padding: 10px;
+}
+.btnEliminar{
+  border: none;
+  background: white;
+  float: right;
+  cursor:pointer;
+  font-size: 17px;
+  color:black;  
+}
+.temas{
+	font-size: 20px;
+	color: black;
+}
+.Archivo:hover, .Archivo:focus {
+  
+ 
+  outline: 0;
+  font-size: 30px;
+  color: white;
+}
+
+.btn_flotanteAgregar {
+    display:inline-block;
+  height: 50px;
+  position: fixed;
+  width: 50px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  border-radius: 50%;
+  color: #fff;
+  bottom: 45px;
+  right: 100px;
+  text-align: center;
+  font-size:16px;
+  text-decoration:none;
+  line-height: 50px;
+  
+}

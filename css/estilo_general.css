@@ -1,0 +1,2154 @@
+.insercion>h4{margin-left:44%;
+  margin-right:45%;
+  height: 30px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.insercion>h3{margin-left:42%;
+  margin-right:40%;
+  height: 30px;
+  font-size: 20px;
+}
+#total,#insertados{
+  padding: 10% 10%;
+}
+
+*{
+  padding:0;
+  margin:0;
+  font-family:"Roboto", sans-serif;
+  list-style: none;
+}
+button,a,input[type=submit]{
+  cursor: pointer;
+}
+.body{
+  padding-top: 80px;
+  background-color:#13232f;
+}
+nav{
+  background:#1ab188;
+  color:#fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  padding-bottom: 10px;
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index:100;
+}
+nav > ul{
+  width: 95%;
+  margin:0.7% 0%  0% 2%;
+}
+nav > ul > li{
+  display:inline-block;
+  width:20%;
+  position: relative;
+}
+nav > ul > li:last-child{
+  float: right;
+  width: 25%;
+  text-align: center;
+}
+nav > ul > li > a{
+  display: block;
+  position: relative;
+  text-decoration:none;
+  color:#fff;
+  width: 100%;
+  padding:7px 0; 
+}
+nav > ul > li > a:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all .3s;
+}
+nav ul > li > a:hover:before{
+  width: 100%;
+}
+
+nav > ul > li > a > span{
+  background:#fff;
+  color:#009688;
+  padding: 5px;
+  margin-right: 2%;
+  border-radius: 50%;
+   transition: all .3s;
+}
+
+nav > ul > li > ul{
+  display: none;
+  position:absolute;
+  text-align:initial;
+  background: #13232f;
+  color:#fff;
+  min-width:190px;
+  padding: 5px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+nav > ul > li > ul li{
+  margin:4px 0px 4px;
+   -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+nav > ul > li > ul li:hover{
+  color: #26a69a;
+}
+nav > ul > li:hover > ul{
+  display: block;
+}
+
+.center_to_sides:before{
+  left:45%;
+}
+.center_to_sides:hover:before{
+  left:0;
+}
+nav > ul > li > ul > li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav > ul > li > ul > li a:{
+  color:#b2dfdb;
+}
+
+.fixMargin {
+    margin-top: 6%;
+}
+
+/*Login styles*/
+.login_main{
+  margin:5% 30% 0% 30%;
+  width:40%;
+}
+.login_main h1,
+.login_main h2{
+  color:#fff;
+  text-align: center;
+}
+.login_main h1 i{
+  border-radius: 50%;
+  margin-right: 1%;
+  font-size: 24px;
+}
+.login_main h2{
+  color:#757575;
+  <!--background: #68EFAD;-->
+}
+.login_main input[type=submit]{
+  margin-top:4%;
+}
+#msgLog{
+  text-align:initial;
+  margin-left:5%;
+  color:#d32f2f;
+}
+.form_card{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 10px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.input_redondo_oscuro{
+  border:2px solid #E0E0E0;
+  background: #E0E0E0;
+  padding:2%;
+  margin-bottom:2%;
+  border:none;
+  width: 90%;
+  font-size: 14px;
+  outline: none;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.input_redondo_oscuro:focus{
+  border-color:#E0E0E0;
+  background: #fff;
+box-shadow:0 0 8px #666;
+}
+.input_bordes_redondos:focus{
+  border:2px solid #E0E0E0;
+  outline: none;
+  background: #fff;
+   -webkit-outline: none;
+  -webkit-border:2px solid #E0E0E0;
+  -webkit-box-shadow: 0 0 5px #719ECE;
+  -moz-outline: none;
+  -moz-border:2px solid #E0E0E0;
+  -moz-box-shadow: 0 0 5px #719ECE;
+}
+.input_icono{
+ background: #E0E0E0;
+ margin-top: 4%;
+ -webkit-border-radius: 15px;
+ padding-left: 10px; 
+}
+.input_icono{
+  color:#757575;
+}
+/*select*/
+select.flatSelect {
+   background: #E0E0E0;
+   padding:6px;
+   border:none;
+    border-radius:17px;
+   -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  width:90%;
+}
+
+select.flatSelect:focus{
+  outline:none;
+  box-shadow:0 0 8px #666;
+}
+.cntSelect{
+    position:relative;
+}
+
+.bSend:hover{
+  background: #fff;
+  color: #283593;
+}
+.botonRedondoFlat{
+  color: #fff;
+  padding: 2%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  margin-left:45%;
+}
+.boton_redondeado{
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+      text-align:center;
+      border:none;
+      text-decoration: none;
+      display:inline-block;
+      color: #FFF;
+      background: #7F8C8D;
+      padding: 7px 20px;
+      white-space: nowrap;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 100px;
+      margin: 10px 5px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+}
+a.boton_redondeado{
+  color: #fff;
+  padding: 7px 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+a.boton_redondeado:visited{
+  color: #fff;
+}
+/*br = boton_redondeado*/
+.br_verde{
+  background: #00897b;
+  box-shadow: 0px 5px 0px 0px #00695c;
+}
+.br_verde:hover{
+  background: #009688;
+}
+.br_verde:active{
+  box-shadow: 0px 2px 0px 0px #00897b;
+}
+.br_azul{
+  background: #455a64;
+  box-shadow: 0px 5px 0px 0px #263238;
+}
+.br_azul:hover{
+  background: #546e7a;
+}
+.br_azul:active{
+  box-shadow: 0px 2px 0px 0px #00897b;
+}
+.card{
+  background: #fff;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+}
+/*Listado de evaluaciones-------------------------------*/
+.contenedor_card_evaluacion .card{
+  padding: 2% 0% 0% 2%;
+  overflow:auto;
+}
+.contenedor_card_evaluacion .card > div:nth-child(1){
+  width:10%;
+  margin:5% 0% 5% 0;
+}
+.contenedor_card_evaluacion .card > div:nth-child(2) label{
+  color:#616161;
+}
+.contenedor_card_evaluacion .card > div:nth-child(2) h4{
+  margin-bottom: 1%;
+}
+.contenedor_card_evaluacion .card > div:nth-child(2) label span{
+  padding-right: 1%;
+}
+.contenedor_card_evaluacion .card > div:nth-child(2){
+  width:70%;
+}
+.contenedor_card_evaluacion .card >  div:nth-child(1) span{
+  color: #26a69a;
+  width: 20%;
+  padding: 1em;
+  border-radius: 50%;
+  font-size: 19px;
+}
+.contenedor_card_evaluacion .card > div{
+  float: left;
+}
+
+.contenedor_card_evaluacion .card{
+  margin: 3% 30%;
+}
+.contenedor_card_evaluacion .barra_opciones{
+  padding: 2%;
+  border-top: 1px solid #BDBDBD;
+  margin-top: 4%;
+}
+.contenedor_card_evaluacion .barra_opciones > span{
+  font-size: 17px;
+  margin-right: 5%;
+  color: #616161;
+  padding: 8px;
+  border-radius: 50%;
+}
+.contenedor_card_evaluacion .barra_opciones > span:hover{
+  color: #1ab188;
+  background: #13232f;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+/*Listado de evaluaciones*/
+
+/*colores*/
+.verde_agua{
+  background: #26a69a;
+}
+.gris{
+  background:#eee;
+}
+.azul_oscuro{
+  background:#13232f;
+}
+.verde_limon{
+  background: #8bc34a;
+}
+.verde_limon:active{
+  background:#689f38;
+}
+.rojo_flat{
+  background: #e53935;
+}
+.rojo_flat:active{
+  background: #b71c1c;
+}
+.sombra_boton{
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 
+             0 1px 5px 0 rgba(0,0,0,0.12),
+             0 3px 1px -2px rgba(0,0,0,0.2);
+  -webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 
+             0 1px 5px 0 rgba(0,0,0,0.12),
+             0 3px 1px -2px rgba(0,0,0,0.2);
+  -o-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 
+             0 1px 5px 0 rgba(0,0,0,0.12),
+             0 3px 1px -2px rgba(0,0,0,0.2);
+}
+/*Colores*/
+/*Eventos*/
+.hover_verde:hover{
+  background: #1ab188;
+}
+.hover_azul_verde:hover{
+  color: #fff;
+  background: #13232f;
+}
+/*Eventos*/
+.centrar_contenido_main{
+  width: 60%;
+  margin:3% 20%;
+}
+.btn_flotante {
+  display:inline-block;
+  height: 56px;
+  position: fixed;
+  width: 56px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  border-radius: 50%;
+  color: #fff;
+  bottom: 45px;
+  right: 24px;
+  text-align: center;
+  font-size:16px;
+  text-decoration:none;
+  line-height: 58px;
+  
+}
+.btn_flotante:hover{
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.efecto_reducir:hover {
+  background: #009688;
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+}
+
+/*formulario evaluacion*/
+.opciones{
+   width: 100%;
+   height: 263px;
+   overflow: scroll;
+   overflow-x: visible;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.5);
+  position:fixed;
+  z-index:101;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;  
+}
+.modal .contenido_modal{
+  background-color:#fff;
+  width:40%;
+  padding: 10px 20px;
+  margin: 10% auto;
+  position: relative;
+}
+
+#fEvaluacion label{
+  margin-left: 1%;
+}
+
+#fEvaluacion h3{
+  margin-bottom: 1%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color:#fff;
+  border-top: 1px dashed #26a69a;
+}
+
+.footer p{
+ padding:10px;  
+}
+/*Formulario login*/
+#fLogin input[type=email],#fLogin input[type=password]{
+  margin-top:2.5%; 
+}
+/*Formulario login*/
+/*Formulario pregunta*/
+.formPregunta{
+  background: #fff;
+  margin:1% 28%;
+  max-width:40%;
+  min-width:40%;
+  overflow:auto;
+  padding:10px;
+}
+.formPregunta textarea{
+  min-width: 85%;
+  max-width: 85%;
+  min-height: 40px;
+  max-height: 40px;
+}
+.cntRespuesta textarea, .cntRespuesta button {
+  float: left;
+}
+.cntRespuesta button{
+  margin: 2%; 
+}
+.botonCircular{
+  font-size: 17px;
+  border:none;
+  color: #fff;
+  padding: 5px 7px;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.botonCircular:hover{
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+.botonCircular:active{
+  box-shadow: none;
+}
+
+.btnCircularVerde{
+  background-color: #00897b;
+}
+
+.btnCircularVerde:hover{
+  background-color: #37474f;
+}
+
+.btnCircularVerde:active{
+  background-color: #546e7a;
+}
+
+.cntRespuesta{
+  min-height: 100px;
+  max-height: 300px;
+  overflow:auto;
+  margin-top: 2%;
+}
+
+.footOpciones{
+  border-top: 1px solid #BDBDBD;
+}
+.btn_cerrar{
+  font-size: 25px;
+  float: right;
+  cursor:pointer;
+}
+.btn_cerrar:hover{
+  color:#e53935;
+}
+/*form para buscar*/
+.fBuscar input[type=text]{
+  width:60%;
+  margin: 2% 0% 2% 2%;
+  padding: 1%;
+}
+/*form para buscar*/
+/*Menu desplegable*/
+.btnMenuDesplegable{
+ color: #616161; 
+  float: right;
+  cursor: pointer;
+}
+.cntMenuDesplegable{
+  float: right;
+  position: relative;
+  margin-right: 1%; 
+  display: inline-block;
+}
+.cntMenuDesplegable aside{
+  clear: both;
+  color:#424242;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  right:17px;
+  min-width: 120px;
+}
+.cntMenuDesplegable aside li{
+  display: block;
+  cursor: pointer;
+  margin:3%;
+  transition:all 0.3s ease;
+}
+
+.cntMenuDesplegable aside li:hover{
+  border-bottom:1px solid #009688;
+  margin-left:2%;
+}
+
+.sacudido_hover:hover{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/*Diseniador evaluaciones*/
+.cntDisenadorEvaluacion{
+  color: #424242;
+  margin-left: 17%;
+  margin-right: 18%;
+}
+.tiposPregunta{
+  border-bottom: 1px solid #bdbdbd;
+  margin: 1%;
+}
+.cntDisenadorEvaluacion > h3{
+  text-align: center;
+  padding: 1%;
+  background-color: #00796b;
+  color: #fff;
+}
+.cntDisenadorEvaluacion .esquemaEvaluacion{
+  padding: 2%;
+}
+.contenido_preguntas > div{
+  margin-top: 2%;
+}
+.contenido_preguntas > div h4{
+  margin-top: 0.4%;
+}
+.contenido_preguntas > div input[type=radio],
+.contenido_preguntas > div input[type=checkbox]{
+  margin-right: 5px;
+}
+.contenido_preguntas > div > div{
+  margin-bottom: 1%;
+}
+.contenido_preguntas > div > div footer{
+  padding: 1%;
+  border-bottom: 1px solid #bdbdbd;
+  margin-top:1%;
+  clear: both;
+  overflow: auto;
+}
+.btnEsta2{
+  /*color: #00897b;*/
+  background-color: #FFFF00 ; /*relleno*/
+  color: #00FF00 ; /*letras*/
+  padding: 7px 50px;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26); 
+  float: right;  
+}
+.btnEsta2:active{
+  background-color: blue;
+  box-shadow: none;
+}
+
+
+.btnEstado{
+  color: #fff;
+  background-color: #d32f2f;
+  color: #FFF;
+  padding: 7px 20px;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26); 
+  float: right;
+}
+.btnEstado:active{
+  background-color:#e53935;
+  box-shadow: none;
+}
+
+.btnEstadoRespondido{
+  background-color: #689f38;
+}
+.tituloPregunta{
+  width:90%;
+  margin-bottom: 2%;
+}
+.tituloPartePrueba {
+  background-color: #37474f;
+  color: #fff;
+  padding: 3px;
+  width:30%;
+  border-radius: 10px 0px;
+}
+/*Pregunta Asocie*/
+.pre_asocie ul li{
+  width: 45%;
+  float:left;
+  text-align: justify;
+  margin-top:2%;
+}
+.pre_asocie ul li:nth-child(1){
+  margin-right: 10%;
+   width: 40%;
+}
+.pre_asocie ul li table{
+  margin-top:2%;
+  border-collapse: collapse;
+}
+
+.pre_asocie .trSeleccionado{
+  border: 2px dashed #ad1457;
+}
+.pre_asocie ul li tr td{
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 3px;
+}
+.pre_asocie ul li p{
+  margin-top:5px;
+}
+.pre_asocie ul li span{
+  color:#fff;
+  padding: 7px;
+  background-color: #00897b;
+  border-radius: 50%;
+  width: 17px;
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+.pre_asocie .footOpciones{
+  clear:both;
+}
+.menu_bar{
+  display: none;
+}
+
+.registrar_profe{
+  width: 58%; 
+  margin: auto; 
+  padding: 2%;
+  /*! margin-top:2%; */ 
+}
+.registrar_profe li{
+  width: 45%;
+  float:left;
+}
+.registrar_profe li label,
+.registrar_profe li input,
+.registrar_profe li select{
+   margin-left: 1.7%;
+}
+.registrar_profe li input,
+.registrar_profe li select{
+  margin-top:1.4%; 
+}
+.registrar_profe form ul{
+  overflow: auto;
+  margin-bottom: 3%;
+}
+
+.registrar_profe .footOpciones{
+ clear: both;
+}
+
+.iputFileIcono{
+    width: 40px;
+    height:40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../imagenes/camera-icon.png);
+}
+.iputFileIcono:active{
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+.iputFileIcono input[type=file]{
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+}
+/*Input file con fuente*/
+.iputFileIconoFuente{
+  width: 40px;
+    height:40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.iputFileIconoFuente:active{
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+.inputFileOculto{
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.iputFileIconoFuente:before{
+  font-family: "puresoft";
+  font-size: 19px;
+  color:#fff;
+  position:absolute;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.prevImagen{
+  width: 20%;
+  margin-bottom:1%;
+  margin-left:30%;
+}
+
+.registrar_estudiante{
+  width: 40%;
+  margin-top: 5% ;
+  margin-left: 30%;
+  padding: 20px;
+  
+}
+.form_ul ul li{
+  float : left;
+  width: 45%;
+}
+/*Formulario pregunta asocie*/
+.formAsocie{
+  margin-top: 2%;
+  margin-left:24%;
+  max-width: 50%;
+  min-width: 50%;
+}
+.modal input[name=puntos]{
+  margin-top: 1.5%;
+  width: 16%;
+  display:block;
+}
+.formAsocie ul li{
+  width:43%;
+  float: left;
+  margin-left: 3%;
+}
+.formAsocie li h4,
+.formAsocie li button{
+  float: left;
+  margin-right:2%;
+}
+.formAsocie table{
+  width:100%;
+}
+
+.formRespuestaCorta input PuntosRC{
+  width:20%;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.formAsocie table tbody{
+  width: 100%;
+  display: block;
+  max-height: 250px;
+  min-height: 250px;
+  overflow-y: scroll;
+}
+.formCompletarOraciones table tbody{
+  width: 130%;
+  display: block;
+  max-height: 250px;
+  min-height: 250px;
+}
+.formAsocie table textarea{
+  max-width: 200px;
+   min-width: 200px;
+}
+.formAsocie .footOpciones{
+  clear: both;
+}
+
+.formAsocie table textarea{
+  max-width: 200px;
+   min-width: 200px;
+}
+
+.botonCompletarRespuesta {
+  display:inline-block;
+  color:#fff;
+  background-color: #00897b;
+  border: none;
+  font-size:17px;
+  padding: 5px;
+  width:200px;
+  text-align:center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius:4px;
+  cursor: pointer;
+}
+
+.botonCompletarRespuesta:hover {
+  background-color:#26a69a;
+}
+
+.botonCompletarRespuesta:active {
+   box-shadow: none;
+}
+
+/*input respuesta corta*/
+.inputRespuestaCorta{
+  display: block;
+  margin-bottom: 1%;
+  height:32px;
+  min-width: 40%;
+  max-width: 100%;
+  padding-left:5px;
+  border: none;
+  border-bottom: 2px solid #424242;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.inputRespuestaCorta:focus{
+ border-bottom: 2px solid #009688;
+}
+
+/*textArea para desarrollo*/
+.textareaDesarrollo{
+  min-width: 80%;
+  max-width: 90%;
+  min-height:70px;
+  max-height:110px;
+  margin-top:2%;
+}
+
+.botonPregunta {
+  display:inline-block;
+  color:#f50c0c;
+  background-color: #fff;
+  border:none;
+  font-size:19px;
+  height:28px;
+  line-height:18px;
+  width:200px;
+  text-align:center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+.botonPregunta:active {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btnCambioEstado{
+  color: #fff;
+  background-color: #2CB510;
+  padding: 7px 20px;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26); 
+  float: right;
+
+}
+.btnCambioEstado:active{
+  background-color:#3D8020;
+  box-shadow: none;
+  
+} 
+
+/*Informacion perfil profedor*/
+.infoPerfilProfe{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+  padding:5px;
+}
+
+.infoPerfilProfe img{
+  width: 25%;
+  margin-left: 37.5%;
+  border-radius:50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.infoPerfilProfe h4{
+  text-align:center;
+  margin-top: 1%;
+  padding-bottom:5px;
+}
+
+.infoPerfilProfe table{
+  width: auto;
+  border-collapse:collapse;
+  margin-left: 5%;
+}
+
+.infoPerfilProfe table tr td{
+  border-bottom:1px solid #bdbdbd;
+  padding-top:10px;
+  padding-bottom:5px;
+}
+.infoPerfilProfe footer{
+  margin-top: 5%;
+}
+
+.infoPerfilEstudiante img{
+  border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.infoPerfilEstudiante h4{
+  text-align: initial;
+  width: 80%;
+  margin-left: 10%;
+}
+.infoPerfilEstudiante .contenido{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.infoPerfilEstudiante .iconoIlustrativo{
+  margin-right: 4px;
+}
+
+/*Insertar curso*/
+.marginDesktop{
+  margin-top: 4%;
+  margin-left: 21%;
+  margin-right: 21%;
+}
+
+.formCurso{
+  padding: 2%;
+}
+
+.formCurso ul{
+  overflow: auto;
+  margin-bottom: 3%;
+}
+
+.formCurso ul li{
+  width: 45%;
+  float:left;
+}
+
+.formCurso li label,
+.formCurso li input{
+   margin-left: 1.7%;
+}
+.formCurso li input{
+  margin-top:1.4%; 
+}
+
+.formCurso .footOpciones{
+  clear: both;
+}
+
+/*moda busqueda profesor*/
+.modalBusqueda{
+  width: 45%;
+  margin-top: 3%;
+  margin-left:26%;
+  padding: 2%;
+}
+.modalBusqueda h4:nth-child(1){
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 1%;
+}
+.modalBusqueda input{
+  margin-top: 1.5%;
+  width: 85%;
+}
+
+.modalBusqueda table{
+  table-layout: fixed;
+  border: 1px solid #bdbdbd; 
+  border-collapse: collapse;
+  min-height: 200px;
+  max-height: 340px;
+  overflow-y:auto ;
+   min-width: 100%;
+}
+.modalBusqueda table tbody{
+  display: block;
+  min-height: 200px;
+  max-height: 340px;
+  overflow-y:auto ;
+  min-width: 100%;
+}
+
+.modalBusqueda table tr{
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+}
+
+.modalBusqueda table tr:nth-child(even){
+  background-color: #b2dfdb;
+}
+
+.modalBusqueda table tr td{
+  padding: 5px;
+  width: 10%;
+}
+.modalBusqueda table tr:hover{
+  color: #fff;
+  background-color: #009688;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.modalBusqueda table tr:active{
+  color: #fff;
+  background-color: #009688;
+   box-shadow: none;
+}
+
+.botonNeutro{
+  background-color: #fff;
+  border: none;  
+}
+
+.btnEliminarOpcion{
+  border: none;
+  background: #fff;
+  float: right;
+  display: none;
+  cursor:pointer;
+  font-size: 17px;
+  color:#fff;  
+}
+
+/*Estilos vista curso*/
+
+.menuLateral{
+  background-color: #fff;
+  width: 25%;
+  position: absolute;
+  height:85%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: fixed;
+}
+
+.menuLateral .btnAddModulo{
+  margin:2%;
+  background-color: #fff;
+  border:none;
+  padding: 4px;
+  width:7%;
+}
+
+.btnAddModulo:hover{
+  background-color: #8bc34a;
+  color:#fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btnAddModulo:active{
+    box-shadow:none;
+}
+.menuLateral .btnAddClaseModulo{
+  background-color: #fff;
+  border:none;
+  padding: 4px;
+  width:8%;
+}
+.menuLateral .btnAddClaseModulo:hover{
+  background-color: #8bc34a;
+  color:#fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.menuLateral .btnAddClaseModulo:active{
+    box-shadow:none;
+}
+.menuLateral .nomCurso{
+  background-color: #009688;
+  color:#fff;
+  padding:4px;
+}
+
+.menuLateral > ul{
+  margin-left: 5%;
+  height: 85%;
+  overflow: auto;
+}
+
+.menuLateral > ul > li{
+  margin-left: 2%;
+  padding: 5px;
+}
+
+.menuLateral > ul > li h4{
+  border-bottom:1px solid #bdbdbd;
+  cursor:pointer;
+  color:#212121;
+}
+.btnEliminarModulo{
+  border: none;
+  background: #fff;
+  float: right;
+  display: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #fff;
+}
+.menuLateral > ul > li h4:hover .btnEliminarModulo{
+  background: none;
+  display: block;
+}
+
+.menuLateral > ul > li h4:hover .icon-folder-open{
+  color: #00796b;
+}
+
+.menuLateral > ul > li h4 span{
+  margin-right: 1%;
+  color: #424242;
+}
+
+.menuLateral > ul > li  > ul{
+  margin-left: 3%;
+  padding: 5px;
+}
+
+.menuLateral > ul > li  > ul > li{
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  padding: 5px;
+}
+
+.menuLateral > ul > li > ul> li:hover .btnEliminarOpcion{
+  background: none;
+  display: block;
+}
+
+.menuLateral > ul > li > ul> li:hover .btnEliminarOpcion:active{
+  color:#c62828;
+}
+
+.menuLateral > ul > li  > ul > li:hover{
+  cursor: pointer;
+  color:#fff;
+  background-color: #26a69a;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.menuLateral > ul > li  > ul > li:active{
+  color:#fff;
+  background-color: #26a69a;
+  box-shadow: none;
+}
+
+#loadCntInfoCurso{
+  height: 100%;
+}
+
+#loadCntInfoCurso .loader{
+  margin-left: 40%;
+  margin-top:10%;
+}
+
+.contenedorInfoCurso{
+  float: left;
+  background-color: #fff;
+  width: 65%;
+  position: absolute;
+  margin-left: 27%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding-left: 2%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+  min-height: 100%;
+}
+.contenedorInfoCurso > header{
+  position: fixed;
+  color: #212121;
+  width: 64%;
+  color:#00796b;
+  padding:5px;
+  background:#fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align:center;
+}
+.contenedorInfoCurso .btnNormal{
+  display: block;
+}
+.btnNormal{
+  margin-top: 5%;
+  border:none;
+  padding: 5px;
+  background-color: #8bc34a;
+  color: #fff;
+  font-size:16px;
+  width: 35%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 1%;
+  border-radius:5px;
+}
+
+.btnNormal span{
+  margin-right: 2%;
+}
+
+.btnNormal:active{
+  box-shadow: none;
+  background-color: #689f38;
+}
+
+/*Estilo de temas*/
+.tema{
+  margin-top: 6%;
+}
+.tema > header{
+  overflow:auto;
+}
+.tema >header h3{
+  width: 90%;
+  color: #212121;
+  margin-bottom: 1%;
+  border-bottom:1px solid #bdbdbd;
+  cursor: pointer;
+}
+.tema .btnEditarTitulo{
+  border: none;
+  background-color: #fff;
+  margin-right: 1%;
+  font-size: 15px;
+}
+
+.tema .btnEditarTitulo:hover{
+  color:#004d40;
+}
+
+.btnEditDescTema{
+  border: none;
+  background-color: #fff;
+  margin-right: 1%;
+  font-size: 15px;
+}
+
+.btnEditDescTema:hover{
+  color:#004d40;
+}
+
+.formEditTema section{
+  padding: 1%;  
+}
+
+.formEditTema textarea{
+  margin-bottom: 2%;
+  min-width:90%;
+  max-width:90%;
+  min-height: 100px;
+  max-height: 100px;
+  padding:5px;
+  overflow:auto;
+}
+
+.formEditTema .footOpciones{
+  overflow:auto;
+}
+
+.formEditTema .footOpciones button{
+  float: right;
+}
+
+.clsBtnAdd{
+  border: none;
+  background:#fff;
+  margin-left:1%;
+}
+
+.clsBtnAdd:hover{
+   color:#004d40;
+}
+
+.btnEliminarEvalList{
+  background-color: #13232f;
+  color: #fff;
+  font-size: 17px;
+}
+.btnEliminarEvalList:hover{
+  color:#e53935;
+}
+
+.clsBtnEliminarArch{
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
+  margin-left: 1%;
+}
+
+.clsBtnEliminarArch:hover{
+  color:#004d40;
+}
+
+.tema .contenido p{
+  text-align: justify;
+}
+.tema h4 .iconoIlustrativo{
+  font-size: 20px;
+  margin-right: 1%;
+  color: #fff;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.tema h4 .iconoIlustrativo.azul{
+  background: #0d47a1;
+}
+.tema h4 .iconoIlustrativo.verde{
+  background-color: #689f38;
+  font-weight: bold ;
+}
+
+.tema .contenido .archivos{
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.tema .contenido ul{
+
+  margin-left: 5%;
+}
+
+.tema .contenido h4{
+  margin-bottom: 1%;
+}
+.listaArchivos li a{
+  text-decoration: none;
+}
+
+.tema .contenido ul .ic-extension{
+  font-size: 27px;
+  margin-right: 1%;
+}
+.ic-extension.rojo{
+   color: #c62828;
+}
+.ic-extension.azul{
+  color:#303f9f;
+}
+.ic-extension.gris{
+  color:#424242;
+}
+.tema .evalAdjunta{
+  color: #fff;
+  background-color: #13232f;
+  padding:7px;
+  width: 50%;
+  margin-bottom: 1%;
+  border-radius: 7px;
+}
+.evalAdjunta a{
+   color: #fff;
+}
+
+.evalAdjunta > span{
+  background-color:#009688 ;
+  padding: 6px;
+  margin-right: 1%;
+  border-bottom: 1px dashed;
+  border-left: 1px dashed;
+  border-right: 1px dashed;
+  font-weight: bold;
+}
+/*Cargando*/
+.centrado{
+  margin-left: 40%;
+  margin-top: 5%;
+}
+.modalLoader{
+  position: fixed;
+  z-index: 103;
+  background-color: #eeeeee;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(238, 238, 238, 0.5);
+}
+.modalLoader .loader{
+  margin-top:40%;
+  margin-left: 30%;
+}
+.loader {
+  font-size: 10px;
+  text-indent: -9999em;
+  width: 11em; 
+  height: 11em; 
+  border-radius: 50%;
+  
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #009688;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #455a64;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.overAll .loader{
+  
+  margin-top: 10%;
+  margin-left: 45%;
+}
+
+/*listar cursos*/
+
+.mainlistarCursos .fBuscar{
+  margin-top: 7%;
+  width: 88%;
+  margin-left: 2%;
+  margin-bottom:2%;
+}
+.marginDesktopAmpliado{
+  width: 90%;
+  margin-left: 7.5%;
+  margin-top:3%;
+}
+.mainlistarCursos .inputBusquedaEstudiante{
+  width: 100%;
+  margin-left: 0;
+}
+.mainlistarCursos  .inputBusquedaEstudiante input{
+  width: 87%;
+}
+.mainlistarCursos .inputBuscarProfesor{
+   width:90%;
+  margin-left: 1%;
+}
+.mainlistarCursos .inputBuscarProfesor input{
+  width: 87%;
+}
+.listaCursos{
+  overflow: auto;
+}
+.listaCursos .iconoIlustrativo{
+  padding-right: 3px;
+}
+.listaCursos center{
+  width: 87.5%;
+  margin-left: 2%;
+  background-color: #009688;
+  color: #fff;
+  padding: 3px;
+}
+.listaCursos li{
+  width: 28%;
+  float: left;
+  margin-left:2%;
+  height:290px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.listaCursos li header{ 
+  background-color: #c2185b;
+  text-align: center;
+  color: #fff;
+  padding:5px;
+  height:65px;
+}
+
+.listaCursos > li > section{
+  padding: 5px;
+}
+
+.listaCursos > li > section h4{
+  display: inline-block;
+}
+
+.listaCursos > li > section div:nth-child(4){
+  overflow: auto;
+}
+
+.listaCursos > li > section div:nth-child(4) h4{
+  display: block;
+}
+
+.listaCursos > li > section div:nth-child(4) label{
+  float: left;
+  margin-top:3%;
+  margin-left:2%;
+}
+
+.listaCursos > li > section img{
+  width: 15%;
+  float:left;
+  margin-top:1%;
+}
+ 
+.listaCursos > li > section div{
+  margin-bottom: 1%;
+}
+
+.listaCursos > li > footer{
+  margin-top:2%;
+  border-top:1px solid #bdbdbd;
+  padding-left:30%;
+   padding-top:3%;
+}
+
+.listaCursos > li > footer button{
+  width: 
+}
+
+/*Estudiantes lista cursos*/
+#contenedorPrincipalEstudiante .fBuscar input{
+  width: 90%;
+}
+#contenedorPrincipalEstudiante .textNoResult{
+  width: 87.5%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+#mainClase .textNoResult{
+  margin-top: 6%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom:0;
+  text-align: initial;
+  padding: 7px;
+  width: 50%;
+  background-color: #1565c0;
+  color: #fff;
+}
+
+.textNoResult >span{
+  font-size: 20px;
+  margin: 1%;
+}
+/*Lista de profesores*/
+.listaProfesores{
+  margin-top:2%;
+}
+
+.listaProfesores label{
+  color: #424242;
+}
+
+.listaProfesores > li{
+  float:left;
+  width:44%;
+  margin:1%;
+}
+
+.listaProfesores > li .fila{
+  margin-top: 1%;
+}
+
+.listaProfesores > li footer{
+  margin-top: 3%;
+  border-top:1px solid #bdbdbd;
+  padding: 2%;
+  padding-left:40%;
+}
+
+.listaProfesores > li .iconoIlustrativo{
+  margin: 2%;
+}
+/*Colores iconos*/
+.morado{
+  color:#3f51b5;
+}
+.amarillo{
+  color:#ffb300;
+}
+.celeste{
+  color:#0277bd;
+}
+.i-verde{
+  color:#8bc34a;
+}
+.i-rojo{
+  color:#ef5350;
+}
+
+.listaProfesores > li .imgPerfil{
+  width: 15%;
+  margin-left:40%;
+  padding-top: 2%;
+}
+.listaProfesores > li .imgPerfil,
+.listaProfesores > li .contenido{
+ 
+}
+
+.listaProfesores > li .imgPerfil img{
+  max-width: 125px;
+  min-height: 70px;
+  max-height: 70px;
+}
+
+.paginacionProfesores{
+  margin-top: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.paginacionProfesores ul{
+  overflow: auto;
+}
+
+/*Lista de estudiantes*/
+.mainlistarCursos .ampliarFBuscar{
+  width: 88%;
+}
+.mainlistarCursos .ampliarFBuscar input{
+  width: 86%;
+}
+.infoEstudiante {
+  overflow: auto;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+
+.infoEstudiante aside{
+  margin-right: 2%;
+}
+
+.infoEstudiante img{
+  min-width:70px;
+  max-width:70px;
+  min-height:75px;
+  max-height:75px;
+}
+
+.infoEstudiante aside,
+.infoEstudiante section{
+  float: left;
+}
+.infoEstudiante section{
+  margin-top: 1%;
+}
+/*Form agregar info a la clase*/
+.formClase form{
+  width: 45%;
+  margin-left:27%;
+  margin-top:2%;
+ padding: 1%; 
+}
+
+.formClase form textarea{
+  min-height: 60px;
+  max-height: 100px;
+  min-width: 93%;
+  max-width: 93%;
+}
+
+.formClase form .preview img{
+  width: 20%;
+}
+
+.formClase form input[type=text],
+.formClase form textarea{
+  margin-top: 1%;
+}
+
+.formClase .listArchivos li label{
+  display: block;
+}
+.formClase .listArchivos li img{
+  width: 100px;
+  min-height: 85px;
+  max-height: 85px;
+}
+.formClase .listArchivos li:first-child{
+  margin-right: 4%;
+}
+
+.formClase ul > li:nth-child(3){
+  margin-top: 2%;
+}
+.listArchivos button{
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.formClase ul > li > ul{
+  margin-left: 3%;
+  min-height: 140px;
+  max-height: 140px;
+  overflow: auto;
+}
+
+.formClase ul > li > ul li{
+  width: 60%;
+  background-color: #0277bd;
+  color: #fff;
+  margin-top: 1%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.formClase ul > li > ul li span{
+  float: right;
+}
+
+#btnAdjuntarEvaluacion{
+  margin-left: 1%;
+}
+
+.formClase .listArchivos li div> span{
+  float: none;
+  font-size: 35px;
+}
+.listArchivos {
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 1%;
+}
+.formClase .listArchivos li button > span{
+  font-size: 19px;
+}
+.formClase .listArchivos li div{
+  padding: 6px;
+  color:#0277bd;
+  margin-top: 2%;
+  width: 80%;
+  text-align: center;
+}
+.formClase .listArchivos li{
+  background:#fff ;
+  float: left;
+  width: 35%;
+  height: 100%;
+  color:#212121;
+}
+/*Iconos para el input file*/
+
+.iputFileIconoFuente.doc:before{
+  content: "\e873";
+  color:#000;
+}
+
+.iputFileIconoFuente.imagen:before{
+  content: "\e90e";
+  color:#000;
+}
+
+.iputFileIconoFuente.audio:before{
+  content: "\e911";
+  color:#000;
+}
+.iputFileIconoFuente.video:before{
+  content: "\e913";
+  color:#000;
+}
+
+/*Colores*/
+
+.iputFileIconoFuente.azul:before{
+  background: #3f51b5;
+  color: #fff;
+}
+.iputFileIconoFuente.amarillo:before{
+  background: #ffa000;
+  color: #fff;
+}
+
+.iputFileIconoFuente.rojo:before{
+  background: #d32f2f;
+  color: #fff;
+}
+
+.iputFileIconoFuente.turqueza:before{
+  background: #00897b;
+  color: #fff;
+}
+.formCambioContrasenia{
+  z-index: 101;
+}
+
+.formCambioContrasenia form{ 
+  background: #fff;
+  margin:5% 28%;
+  max-width:40%;
+  min-width:40%;
+  padding:10px;
+}
+
+.formCambioContrasenia form input{
+  margin-top: 1.3%;  
+}
+
+.formCambioContrasenia form h3{
+  margin-bottom: 1%;
+}
+
+.botonEstudiante:hover, .botonEstudiante:focus {
+  background: #3498DB;
+  color: #fff;
+  outline: 0;
+}
+
+.botonEstudiante {
+ border-radius: 64px 64px 64px 64px;
+-moz-border-radius: 64px 64px 64px 64px;
+-webkit-border-radius: 64px 64px 64px 64px;
+  display: block;
+  color: #3498DB;
+  background: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #fff;
+  transition: 0.2s ease-out;
+  border: 1px solid #108eff;
+  padding: 5px;
+}
+
+.textSinBordes  {
+  border-color: transparent;
+}
+
+.cardPequenia li{
+  height:220px;
+}
+
+.sobrePosicion{
+  /*! position: absolute; */
+}
+
+/*Botones para painacion*/
+.footPaginacion{
+  margin-top: 5%;
+  margin-left:  42%;
+}
+
+.footPaginacion button{
+  border: none;
+  font-size: 25px;
+  background: none;
+  color:#26a69a;
+}
+.footPaginacion button:hover{
+  color:#00695c;
+}
+.footPaginacion button:active{
+  color:#00695c;
+}
+.footPaginacion button:first-child{
+  margin-right:8%;
+}
+
+/*Texto para no resultados*/
+.textNoResult{
+  margin-top:2%;
+  padding:5px;
+  text-align:center;
+}
+.listaCursos .textNoResult{
+  width: 87%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+.cargandoOverAll{
+  position:absolute;
+  background-color: rgba(238, 238, 238, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.cargandoOverAll .loader{
+  margin: 0;
+  margin: 10% auto;
+}
+
+
+.formCambioFoto form{ 
+  background: #fff;
+  margin:5% 28%;
+  max-width:40%;
+  min-width:40%;
+  padding:10px;
+}
+
+.formCambioFoto form input{
+  margin-top: 1.3%;  
+}
+
+.formCambioFoto form h3{
+  margin-bottom: 1%;
+}
+
+.btn_flotanteExport {
+    display:inline-block;
+  height: 60px;
+  position: fixed;
+  width: 60px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  border-radius: 60%;
+  color: #fff;
+  bottom: 130px;
+  right: 24px;
+  text-align: center;
+  font-size:15px;
+  text-decoration:none;
+  line-height: 58px;
+  
+}
+.btn_flotanteExport:hover{
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+.marginPreguntas{
+  margin-top: 5%;
+}
+
+.comprobante{
+  padding: 3%;
+}
+
+.btnImpresion{
+  float: right;
+  font-size: 25px;
+}
+.inputBuscarEvaluacion{
+  min-width: 80%;
+}
+.contenedorCronometro{
+   margin: 10px auto;
+  position: left;
+  height: 15px;
+}
+
+.reloj{
+  float: left;
+  font-size: 25px;
+  font-family: Courier,sans-serif;
+  color: #363431;
+}
+.hoverButton{
+  cursor:pointer;
+}
+.hoverButton button{
+  display: none;
+  float: right;
+  border:none;
+}
+.hoverButton:hover > button{
+  display: block;
+}

@@ -1,0 +1,82 @@
+.modal-content {width: 30%;overflow: hidden;}
+.aside-modal{float: right}
+form{float: left}
+.verde_agua{margin-left: 60%; border-radius: 10px;}
+.title-modal{text-align: center; margin-top: 3%;margin-bottom: 3%;}
+
+/* Set a style for all buttons */
+.modal h3{margin-top: 4%;margin-bottom: 4%;}
+#id02 button, #id02 h4{width: 40%;margin: 2%;}
+#id02{text-align:center;}
+#id02 h4{border: 1px solid green}
+.modal button{
+    margin-bottom: 4%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    border-radius: 6px;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    float: right;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 5px;    
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
